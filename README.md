@@ -15,3 +15,6 @@ Version Control: git
 
 ## Installation Guide
 ...
+
+## Application Overview
+<img src="/doc/ApplicationStructure.png" />
