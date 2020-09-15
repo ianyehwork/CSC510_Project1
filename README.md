@@ -1,15 +1,20 @@
-# Introduction
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+## Technologies and Tools
+Language: Python 3
 
-# Tools and Technology
-Languages: Python
-Style: Pep8
-Web Framework: Flask
+ML Library: sklearn, pandas, numpy
 
-# Functional Requirements
+Web Application Frameword: Flask
 
+Database: sqlite
 
-# Testing
+Tools: Visual Studio Codee
 
+Version Control: git
 
-# Future Work
+## Installation Guide
+...
+
+## Application Overview
+<img src="/doc/ApplicationStructure.png" />
