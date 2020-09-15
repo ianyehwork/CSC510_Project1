@@ -19,7 +19,7 @@
 <b>Version Control</b>: git
 
 ## Installation Guide
-...
+....
 
 ## Application Overview
 <img src="/doc/ApplicationStructure.png" />
