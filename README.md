@@ -4,17 +4,19 @@
 [Youtube Video](https://youtu.be/MqVWzoUAND4)
 
 ## Technologies and Tools
-Language: Python 3
+<b>Language</b>: Python 3
 
-ML Library: sklearn, pandas, numpy
+<b>ML Library</b>: sklearn, pandas, numpy
 
-Web Application Frameword: Flask
+<b>Web Application Framework</b>: Flask
 
-Database: sqlite
+<b>Test Framework</b>: pytest
 
-Tools: Visual Studio Codee
+<b>Database</b>: sqlite
 
-Version Control: git
+<b>Tools</b>: Visual Studio Code
+
+<b>Version Control</b>: git
 
 ## Installation Guide
 ...
