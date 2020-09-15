@@ -23,3 +23,6 @@
 
 ## Application Overview
 <img src="/doc/ApplicationStructure.png" />
+
+## Database Schema
+<img src="/doc/Schema.png" />
