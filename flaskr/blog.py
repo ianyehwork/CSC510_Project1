@@ -9,6 +9,11 @@ from flaskr.db import get_db
 bp = Blueprint('blog', __name__)
 
 @bp.route('/')
+def home():
+    return redirect(url_for('auth.login'))
+
+@bp.route('/index', methods=('GET','POST'))
+@login_required
 def index():
     db = get_db()
     posts = db.execute(

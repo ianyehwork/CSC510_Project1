@@ -1,13 +1,14 @@
 html {
   font-family: sans-serif;
-  background: #eee;
+  background: #080808;
   padding: 1rem;
 }
 
 body {
   max-width: 960px;
   margin: 0 auto;
-  background: white;
+  background: black;
+  color:white;
 }
 
 h1,
@@ -17,7 +18,7 @@ h4,
 h5,
 h6 {
   font-family: serif;
-  color: #377ba8;
+  color: green;
   margin: 1rem 0;
 }
 
@@ -31,7 +32,7 @@ hr {
 }
 
 nav {
-  background: lightgray;
+  background: #1a1917;
   display: flex;
   align-items: center;
   padding: 0 0.5rem;
@@ -131,7 +132,13 @@ header .action {
   min-height: 12em;
   resize: vertical;
 }
-
+.content input{
+  border-radius: 15px;
+  background: #1a1917;
+  min-height: 2em;
+  color: white;
+  border : none;
+}
 input.danger {
   color: #cc2f2e;
 }
