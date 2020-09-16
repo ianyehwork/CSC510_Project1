@@ -8,7 +8,7 @@ def test_index(client, auth):
     assert b"Register" in response.data
 
     auth.login()
-    response = client.get('/')
+    response = client.get('/index')
     assert b'Log Out' in response.data
     assert b'test title' in response.data
     assert b'by test on 2018-01-01' in response.data
