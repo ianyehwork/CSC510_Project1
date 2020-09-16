@@ -21,7 +21,7 @@
 <b>Version Control</b>: git
 
 ## Installation Guide
-#For Mac/Ubuntu
+#For Mac/Ubuntu  
 Install Flask using pip - pip/pip3 install flask
 
 cd to project directory
@@ -30,7 +30,7 @@ export FLASK_APP=flaskr
 
 flask init-db
 
-##Run
+##Run  
 To run just do the following
 
 flask run
