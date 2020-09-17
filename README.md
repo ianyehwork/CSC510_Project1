@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.com/ianyehwork/CSC510_Project1.svg?branch=master)](https://travis-ci.com/ianyehwork/CSC510_Project1)
 
-## Video Description
+## Video
 [![Stock Market Predictions using Machine Learning](http://i3.ytimg.com/vi/MqVWzoUAND4/hqdefault.jpg)](https://youtu.be/MqVWzoUAND4)
 
 ## Technologies and Tools
