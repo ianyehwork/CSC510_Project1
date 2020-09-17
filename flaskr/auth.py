@@ -22,7 +22,7 @@ def register():
         elif not password:
             error = 'Password is required.'
         elif db.execute(
-            'SELECT id FROM user WHERE username = ?', (username,)
+            'SELECT username FROM user WHERE username = ?', (username,)
         ).fetchone() is not None:
             error = 'User {} is already registered.'.format(username)
 
@@ -56,8 +56,8 @@ def login():
 
         if error is None:
             session.clear()
-            session['user_id'] = user['id']
-            return redirect(url_for('blog.index'))
+            session['username'] = user['username']
+            return redirect(url_for('stock.index'))
 
         flash(error)
 
@@ -70,13 +70,13 @@ def logout():
 
 @bp.before_app_request
 def load_logged_in_user():
-    user_id = session.get('user_id')
+    username = session.get('username')
 
-    if user_id is None:
+    if username is None:
         g.user = None
     else:
         g.user = get_db().execute(
-            'SELECT * FROM user WHERE id = ?', (user_id,)
+            'SELECT * FROM user WHERE username = ?', (username,)
         ).fetchone()
 
 def login_required(view):
