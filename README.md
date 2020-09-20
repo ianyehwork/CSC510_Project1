@@ -18,6 +18,10 @@
 
 <b>Tools</b>: Visual Studio Code
 
+<b>Syntax Checker & Sytle Checker</b>: pylint (VSCode Python v2020.8.109390 Extension)
+
+<b>Code Formatter</b>: autopep8 (CSCode Python-autopep8 v1.0.2)
+
 <b>Version Control</b>: git
 
 ## Installation Guide
