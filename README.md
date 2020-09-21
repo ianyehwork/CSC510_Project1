@@ -10,9 +10,14 @@ Below is the video which describes our project's idea and implementation
 
 [![Stock Market Predictions using Machine Learning](http://i3.ytimg.com/vi/MqVWzoUAND4/hqdefault.jpg)](https://youtu.be/MqVWzoUAND4)
 
-## Why this project
+## Why can make you choose this project:
 
-
+- The project is very interesting and usefull
+- The code is very Simple and easy to modify
+- Modular architecture
+- Scalable design
+- Well commented and easily understandable
+- Has a good scope for further improvement
 
 ## Technologies and Tools
 <b>Language</b>: Python 3
