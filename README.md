@@ -1,3 +1,4 @@
+#### Stock Exchange Prediction
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 [![Build Status](https://travis-ci.com/ianyehwork/CSC510_Project1.svg?branch=master)](https://travis-ci.com/ianyehwork/CSC510_Project1)
