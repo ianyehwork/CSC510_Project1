@@ -5,14 +5,11 @@
 {% endblock %}
 
 {% block content %}
-  <form method="post">
-    <label for="stock_name">Stocks</label>
-  
-<input list="Stock choices" id="stock choice" name="stock choice" />
-
-<datalist id="Stock choices">
-<select id="stock_name" name="stock_name">
-    	<label for="stock choice">Choose a stock:</label>
+<form method="post">
+<label for="date">Date:</label>
+  <input type="date" id="date" name="date">
+<label for="stock_name">Stocks</label>
+<select name="stock_name" id="stock_name">
 <option id='Apple Inc.'>Apple Inc.</option>
 <option id='3M Company'>3M Company</option>
 <option id='8x8 Inc.'>8x8 Inc.</option>
@@ -1997,8 +1994,6 @@
 <option id='WidePoint Corp.'>WidePoint Corp.</option>
 <option id='Wireless Telecom Group Inc.'>Wireless Telecom Group Inc.</option>
 </select> 
-</datalist>
-    </select>
-    <input type="submit" value="Select">
-  </form>
+<input type="submit" value="Select">
+</form>
 {% endblock %}
