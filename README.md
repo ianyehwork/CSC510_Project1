@@ -22,7 +22,7 @@ Below is the video which describes our project's idea and implementation
 ## Technologies and Tools
 <b>Language</b>: Python 3
 
-<b>ML Library</b>: sklearn, pandas, numpy
+<b>ML Library</b>: Flask, click, yfinance, matplotlib, Werkzeug, pandas, numpy, get_all_tickers, pytest, scikit_learn.
 
 <b>Web Application Framework</b>: Flask
 
