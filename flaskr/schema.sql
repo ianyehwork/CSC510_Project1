@@ -9,11 +9,24 @@ CREATE TABLE user (
 );
 
 CREATE TABLE user_stock (
-  stock_id TEXT NOT NULL,
-  username TEXT NOT NULL
+  username TEXT NOT NULL,
+  ticker_name TEXT NOT NULL,
+  FOREIGN KEY (username) REFERENCES user (username),
+  FOREIGN KEY (ticker_name) REFERENCES stock (ticker_name),
+  PRIMARY KEY (username,ticker_name)
 );
 
 CREATE TABLE stock (
-  stock_id TEXT PRIMARY KEY,
-  stock_name TEXT NOT NULL
+  stock_id INTEGER PRIMARY KEY AUTOINCREMENT,
+  stock_name TEXT NOT NULL,
+  ticker_name TEXT NOT NULL
+);
+
+CREATE TABLE post (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  author_id INTEGER NOT NULL,
+  created TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  title TEXT NOT NULL,
+  body TEXT NOT NULL,
+  FOREIGN KEY (author_id) REFERENCES user (id)
 );
