@@ -10,25 +10,24 @@ Below is the video which describes our project's idea and implementation
 
 [![Stock Market Predictions using Machine Learning](http://i3.ytimg.com/vi/MqVWzoUAND4/hqdefault.jpg)](https://youtu.be/MqVWzoUAND4)
 
-## Why can make you choose this project:
+## Why choose this project:
 
-- The project is very interesting and usefull
-- The code is very Simple and easy to modify
+- The project provides visualisation of stocks of 2000+ company markets and helps in making prediction for the next time period.
 - Modular architecture
 - Scalable design
-- Well commented and easily understandable
-- Has a good scope for further improvement
+- You will be able to explore data analysis, predictive modelling and explore the integration of NLP functionality.
+- You can scale the project to use different predictive models to compare the efficiencies as well as compare different stocks to make the right decision to invest.
 
 ## Technologies and Tools
-<b>Language</b>: Python 3
+<b>Language</b>: Python 3, HTML, CSS
 
-<b>ML Library</b>: Flask, click, yfinance, matplotlib, Werkzeug, pandas, numpy, get_all_tickers, pytest, scikit_learn.
+<b>Libraries</b>: Flask, click, yfinance, matplotlib, Werkzeug, pandas, numpy, get_all_tickers, pytest, scikit_learn.
 
 <b>Web Application Framework</b>: Flask
 
 <b>Test Framework</b>: pytest
 
-<b>Database</b>: sqlite
+<b>Database</b>: SQLite
 
 <b>Tools</b>: Visual Studio Code
 
