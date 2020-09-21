@@ -10,6 +10,10 @@ Below is the video which describes our project's idea and implementation
 
 [![Stock Market Predictions using Machine Learning](http://i3.ytimg.com/vi/MqVWzoUAND4/hqdefault.jpg)](https://youtu.be/MqVWzoUAND4)
 
+## Why this project
+
+
+
 ## Technologies and Tools
 <b>Language</b>: Python 3
 
