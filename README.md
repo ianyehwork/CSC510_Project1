@@ -4,6 +4,8 @@
 
 [![Build Status](https://travis-ci.com/ianyehwork/CSC510_Project1.svg?branch=master)](https://travis-ci.com/ianyehwork/CSC510_Project1)
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4042066.svg)](https://doi.org/10.5281/zenodo.4042066)
+
 ## Video
 
 Below is the video which describes our project's idea and implementation
@@ -37,14 +39,14 @@ Below is the video which describes our project's idea and implementation
 
 <b>Version Control</b>: git
 
-## Installation Guide
-# Using Docker
+# Installation Guide
+## Using Docker
 1. navigate to the project directory with the Dockerfile
 2. docker build -t csc510/p1:latest .
 3. docker run -p 5000:5000 csc510/p1:latest
 4. open browser and enter http://localhost:5000/auth/login
 
-# For Mac/Ubuntu  
+## For Mac/Ubuntu  
 Install Flask using pip - pip/pip3 install flask
 
 cd to project directory
@@ -53,13 +55,13 @@ export FLASK_APP=flaskr
 
 flask init-db
 
-# Run  
+## Run  
 To run just do the following
 
 flask run
 
-## Application Overview
+# Application Overview
 <img src="/doc/ApplicationStructure.png" />
 
-## Database Schema
+# Database Schema
 <img src="/doc/Schema.png" />
