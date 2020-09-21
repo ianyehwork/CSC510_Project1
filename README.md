@@ -1,9 +1,13 @@
-#### Stock Exchange Prediction
+#### STOCK EXCHANGE PREDICTION USING MACHINE LEARNING
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 [![Build Status](https://travis-ci.com/ianyehwork/CSC510_Project1.svg?branch=master)](https://travis-ci.com/ianyehwork/CSC510_Project1)
 
 ## Video
+
+below is the video which describes our project's idea and implementation
+
 [![Stock Market Predictions using Machine Learning](http://i3.ytimg.com/vi/MqVWzoUAND4/hqdefault.jpg)](https://youtu.be/MqVWzoUAND4)
 
 ## Technologies and Tools
