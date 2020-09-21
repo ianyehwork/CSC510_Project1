@@ -67,20 +67,18 @@ def choose():
             db = get_db()
             try:
                 print('Got Ticker',stock_name)
-                tickername = db.execute('SELECT ticker_name FROM stock WHERE stock_name = ?', (stock_name,)).fetchone()
+                stock_id = db.execute(
+                    'SELECT stock_id FROM stock WHERE stock_name = ?', (stock_name,)).fetchone()
                 # The API which gets data from internet does not take company name for getting data, but rather ticker for the company
                 # For example Amazon has ticker AMZN, Apple AAPL, so gather a list from internet which gives you this conversion
                 # Then u need to store those into stock_id column of stock table corresponding to each company
-                try:
-                    db.execute("INSERT INTO user_stock (username,ticker_name) VALUES(?, ?)", ((session.get('username'), tickername[0])))
-                #Currently I am just storing AMZN only to represent, you can modify it back to previous way after you are able to get
-                #correct tickers    
-                    db.commit()
+                db.execute('INSERT INTO user_stock (stock_id,username)'
+                           ' VALUES (?, ?)',
+                           (stock_id[0],session.get('username')))
                 # Currently I am just storing AMZN only to represent, you can modify it back to previous way after you are able to get
                 # correct tickers
-                except:
-                    print('Stock already Present')
-                print("Got Ticker")
+                db.commit()
+
             except Exception as e:
                 print(e)
             return redirect(url_for('stock.index'))
