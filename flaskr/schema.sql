@@ -9,13 +9,11 @@ CREATE TABLE user (
 );
 
 CREATE TABLE user_stock (
-  username TEXT NOT NULL,
-  stock_id INTEGER NOT NULL,
-  FOREIGN KEY (username) REFERENCES user (username),
-  FOREIGN KEY (stock_id) REFERENCES stock (stock_id)
+  stock_id TEXT NOT NULL,
+  username TEXT NOT NULL
 );
 
 CREATE TABLE stock (
-  stock_id INTEGER PRIMARY KEY AUTOINCREMENT,
+  stock_id TEXT PRIMARY KEY,
   stock_name TEXT NOT NULL
 );

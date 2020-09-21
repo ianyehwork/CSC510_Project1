@@ -14,7 +14,7 @@ def get_stock(ticker_name, days_number):
     return df
 
 
-def regression(df):
+def regression(df,name,date):
     df = df[['Open', 'High', 'Low', 'Close', 'Volume']]
     # Attribute Reduction
     df['HL_PCT'] = (df['High'] - df['Low']) / df['Close'] * 100.0
@@ -63,10 +63,11 @@ def regression(df):
         df.loc[next_date] = [np.nan for _ in range(len(df.columns)-1)]+[i]
 
     # plotting data with the original and the predicted
-    plt.figure(figsize=(5, 2))
+    plt.style.use('dark_background')
+    plt.figure(figsize=(8, 4))
     plt.plot(df['Close'])
     plt.plot(df['Forecast'])
     plt.legend(loc=4)
     plt.xlabel('Date')
     plt.ylabel('Price')
-    plt.show()
+    plt.savefig(fname='flaskr/static/'+name+'-'+date+'.png',format='png')
