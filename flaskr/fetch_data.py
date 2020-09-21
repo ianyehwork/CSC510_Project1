@@ -1,6 +1,6 @@
 import yfinance as yf
 import matplotlib.pyplot as plt
-
+import datetime
 import math
 import numpy as np
 from sklearn.model_selection import train_test_split
@@ -58,9 +58,9 @@ def regression(df):
     next_unix = last_unix + one_day
 
     for i in forecast_set:
-    next_date = datetime.datetime.fromtimestamp(next_unix)
-    next_unix += 86400
-    df.loc[next_date] = [np.nan for _ in range(len(df.columns)-1)]+[i]
+        next_date = datetime.datetime.fromtimestamp(next_unix)
+        next_unix += 86400
+        df.loc[next_date] = [np.nan for _ in range(len(df.columns)-1)]+[i]
 
     # plotting data with the original and the predicted
     plt.figure(figsize=(5, 2))
