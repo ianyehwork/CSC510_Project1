@@ -18,13 +18,6 @@ def home():
 def index():
     db = get_db()
     
-    #x = db.execute(
-    #    'SELECT stock_name FROM stock where stock_id = 4').fetchone();
-    
-    #print("X", x[0])
-        
-    #print("inside db execute", x)
-
     if len(db.execute('Select * from stock').fetchall()) == 0:
         with open('/home/mnagdev/CSC510_Project1/flaskr/stocks.csv') as f:
             reader = csv.reader(f)
@@ -33,10 +26,8 @@ def index():
                     db.execute("INSERT INTO stock (stock_name,ticker_name) VALUES(?, ?)",(row[1], row[0]) )
                     db.commit()
                 except:
-                    print("issue in insertion")
-    #xcept:
-    #   print("issue in reading")
-     
+                    print("Stock already present")
+
     #I created a method in this file get_post() which gets all the ticker names from stock_id, which is currently just amazon
     posts = get_post()
     #You need to do the following - for each stock_id in posts, call the fetch_data function, save the matplotlib chart image into static folder
