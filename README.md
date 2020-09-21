@@ -33,11 +33,17 @@ Below is the video which describes our project's idea and implementation
 
 <b>Syntax Checker & Sytle Checker</b>: pylint (VSCode Python v2020.8.109390 Extension)
 
-<b>Code Formatter</b>: autopep8 (CSCode Python-autopep8 v1.0.2)
+<b>Code Formatter</b>: autopep8 (VSCode Python-autopep8 v1.0.2)
 
 <b>Version Control</b>: git
 
 ## Installation Guide
+# Using Docker
+1. navigate to the project directory with the Dockerfile
+2. docker build -t csc510/p1:latest .
+3. docker run -p 5000:5000 csc510/p1:latest
+4. open browser and enter http://localhost:5000/auth/login
+
 # For Mac/Ubuntu  
 Install Flask using pip - pip/pip3 install flask
 
