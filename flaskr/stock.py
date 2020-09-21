@@ -17,13 +17,26 @@ def home():
 @bp.route('/index')
 @login_required
 def index():
-    # db = get_db()
+    db = get_db()
     # I created a method in this file get_post() which gets all the ticker names from stock_id, which is currently just amazon
     # posts = get_post()
     # You need to do the following - for each stock_id in posts, call the fetch_data function, save the matplotlib chart image into static folder
     # with the filename format COMAPNYNAME-DD-MM-YY for the date upto which model has been made
     # Now populate the below list(of lists) with ['COMPANYNAME','FILENAME'] for each company, format which will be read at website
     # This is all static to represent working
+    if len(db.execute('Select * from stock').fetchall()) == 0:
+        with open('/home/mnagdev/CSC510_Project1/flaskr/stocks.csv') as f:
+            reader = csv.reader(f)
+            for row in reader:
+                try:
+                    db.execute("INSERT INTO stock (stock_name,ticker_name) VALUES(?, ?)",(row[1], row[0]) )
+                    db.commit()
+                except:
+                    print("issue in insertion")
+    posts = get_post()
+    for item in posts:
+        df, tn = fetch_data.get_stock(item[0],7)
+        fetch_data.regression(df, tn)
     info_stocks = [['AMZN', 'AMZN-DD-MM-YY.png']]
     return render_template('stock/index.html', posts=info_stocks)
 
