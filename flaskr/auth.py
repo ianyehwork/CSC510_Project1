@@ -53,6 +53,7 @@ def login():
 
         if user is None:
             error = 'Incorrect username.'
+            #calling check_password_hash function
         elif not check_password_hash(user['password'], password):
             error = 'Incorrect password.'
 
