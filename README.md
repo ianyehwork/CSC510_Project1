@@ -10,7 +10,7 @@
 
 Below is the video which describes our project's idea and implementation
 
-[![Stock Market Predictions using Machine Learning](http://i3.ytimg.com/vi/MqVWzoUAND4/hqdefault.jpg)](https://youtu.be/MqVWzoUAND4)
+[![Stock Market Predictions using Machine Learning](http://i3.ytimg.com/vi/3YbNEt3dYtc/hqdefault.jpg)](https://www.youtube.com/watch?v=3YbNEt3dYtc)
 
 ## Why choose this project:
 
