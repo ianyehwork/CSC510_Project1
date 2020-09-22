@@ -55,6 +55,15 @@ export FLASK_APP=flaskr
 
 flask init-db
 
+## For Windows
+Install Flask using pip - pip/pip3 install flask
+
+cd to project directory
+
+set FLASK_APP=flaskr
+
+flask init-db
+
 ## Run  
 To run just do the following
 
