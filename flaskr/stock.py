@@ -44,6 +44,7 @@ def index():
     for item in posts:
         print('xxxx'+item[0])
         df = get_stock(item[0],125)
+        # calling linear regression functiom
         regression(df, item[0], date.today().strftime('%d-%m-%Y'))
         info_stocks.append([item[0],item[0]+'-'+date.today().strftime('%d-%m-%Y')+'.png'])
     print(info_stocks)
