@@ -14,4 +14,4 @@ Ensure the test suite passes.
 
 Make sure your code linters.
 
-Issue that pull request
+Issue that pull request.
