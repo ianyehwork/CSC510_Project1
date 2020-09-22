@@ -15,3 +15,5 @@ Ensure the test suite passes.
 Make sure your code linters.
 
 Issue that pull request.
+
+Give proper credit to the contributors!
